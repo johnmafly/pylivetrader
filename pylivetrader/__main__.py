@@ -166,4 +166,6 @@ main.add_command(version)
 
 
 if __name__ == '__main__':
-    main()
+    from logbook.compat import LoggingHandler
+    with LoggingHandler():
+        main()
